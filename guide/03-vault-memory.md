@@ -6,7 +6,7 @@ order: 3
 
 # Vault memory
 
-Every agent session starts with no memory, so the memory lives in my Obsidian vault. The vault is my notebook and the agents' memory at the same time.
+Every agent session starts with no memory, so the memory lives in my Obsidian vault. The vault is my notebook and the agents' memory at the same time. This exists across most, if not all, of my long-term projects and is essential for making cross connections in my notebook too. Some people refer to this technique as the "second brain" (eurgh).[^1]
 
 <!-- FIGURE: slide 4, project folders with CLAUDE.md pointing at state and log pairs in the vault -->
 
@@ -48,7 +48,7 @@ This is the state file for this repo, written by the agent at the end of the fir
 - [get-up-to-speed](../kit/get-up-to-speed.md) reads the state at the start of a session and briefs me on where we left off. The [previous page](02-claude-md-and-skills.md#skillmd-a-recipe-loaded-when-needed) shows its `SKILL.md`.
 - [save-state](../kit/save-state.md) rewrites the state, appends to the log, then commits and pushes just those files in the vault repo. Because the vault is a git repo, the same state is there on every machine and for every agent.
 
-Both are public in [claude-state-skills](https://github.com/mbarnfield63/claude-state-skills).
+Both are public if you'd like to copy them directly from [claude-state-skills](https://github.com/mbarnfield63/claude-state-skills).
 
 "Get up to speed" rebuilds the context from a few hundred words, instead of the agent re-reading the whole repo.
 
@@ -62,8 +62,14 @@ commit → "save state" → /clear
 
 `/clear` wipes the conversation. Nothing is lost, because the state and log hold it. The next session opens with "get up to speed" and loads as much context as it needs, and no more.
 
-This is the fix for the chat-window problem on the [agents](01-agents.md) page. The fix is in how the work is stored, not in prompting harder.
+This is the fix for long chats that go in circles and forget what you told them. The fix is in how the work is stored, not in prompting harder.
 
 ## I read the same notes
 
 Because it is all plain Markdown in Obsidian, I read the same notes my agents do, with links and search.
+
+## I have a scientific log book
+
+Along with *plenty* of backups (please always do this anyway), I have an irrefutable record of everything I have achieved, tried, failed, archived, and spent too much time on during my PhD (and other life projects too).
+
+[^1]: I would love to directly link to the original inspiration/source of this exact layout but I fail to remember the exact guide. Andrej Karpathy is well known as the father of the LLM Wiki architecture knowledge pattern so I guess at its core credit goes to him. [LLM Wiki Explainer Video Link](https://www.youtube.com/watch?v=n4EVksU_EOs)
