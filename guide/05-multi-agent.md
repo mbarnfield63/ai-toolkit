@@ -16,7 +16,7 @@ To read a molecule in an exoplanet spectrum, you need its line list, and line li
 
 For each molecule the pipeline is: find every relevant paper in the literature, pull the tables out of PDFs (many of the older papers are just scans of the journal itself), build and check the network, then write it up. By hand that is months of careful reading and record keeping per molecule, hard grunt work, prone to mistakes. Therefore this job suits agents very well. I've done it in parts for 18 molecules so far...
 
-The catch/benefit is that one wrong number silently corrupts the network. So every agent rule says "never invent a value; flag it for manual review", and scripts do every step that can be scripted. Meaning also that a single wrong value in the network breaks it, allowing agents to simply self check when they break the network.
+The catch, and the benefit, is that one wrong number breaks the network: the fit throws an error. So every agent rule says "never invent a value; flag it for manual review", and scripts do every step that can be scripted. The error also lets agents check their own work. If the network breaks after a change, they know something they added is wrong.
 
 ## One orchestrator, many workers
 
