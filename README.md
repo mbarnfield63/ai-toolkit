@@ -1,6 +1,6 @@
 # AI Toolkit
 
-How I work with AI coding agents day to day: the setup, the tools, and what went wrong along the way. I'm a PhD student in molecular spectroscopy, and most of this grew out of running a research pipeline with Claude Code.
+How I work with AI coding agents day to day: the setup and the tools. I'm a PhD student in molecular spectroscopy, and most of this grew out of running a research pipeline with Claude Code.
 
 This is a living record. When I start or stop using a tool, it changes here.
 
