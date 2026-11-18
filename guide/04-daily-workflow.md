@@ -8,7 +8,7 @@ order: 4
 
 The vault from the [last page](03-vault-memory.md) is the hub. Nothing depends on one chat window remembering anything.
 
-<!-- FIGURE: slide 5, hub diagram: phone, VaultAgent, me, project agents, GPU cluster around the vault -->
+![How work moves: phone and VaultAgent, me on the laptop, project agents and the GPU cluster, all around the Obsidian vault](../img/hub.png)
 
 ## Four(ish) steps
 

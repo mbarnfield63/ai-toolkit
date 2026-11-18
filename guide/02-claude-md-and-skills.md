@@ -28,45 +28,11 @@ Every research project has its own conventions, environment and stage of maturit
 
 ## SKILL.md: a recipe loaded when needed
 
-A skill is a recipe for a job I repeat. Each skill is a folder with one file in it, `SKILL.md`, plus any scripts it needs. Here is [get-up-to-speed](../kit/get-up-to-speed.md), the skill named in the `CLAUDE.md` above:
+A skill is a recipe for a job I repeat. Each skill is a folder with one file in it, `SKILL.md`, plus any scripts it needs. Link to: [get-up-to-speed](../kit/get-up-to-speed.md), the skill named in the `CLAUDE.md` above:
 
-```markdown
----
-name: get-up-to-speed
-description: "Use when the user says \"get up to speed\" (or /get-up-to-speed) in any project repo. Reads that project's Obsidian state file to reconstruct full context at the start of a session."
----
-
-# /get-up-to-speed
-
-Reconstructs session context from a project's Obsidian state file. Works in any code project that has a `CLAUDE.md` with an "Initialize"/"get up to speed" rule pointing at a vault state file — no per-project setup needed beyond that existing convention.
-
-## What to do when invoked
-
-1. **Find the project's `CLAUDE.md`.** Start at the current working directory and walk upward until one is found (stop at the first one, don't keep climbing past it).
-
-2. **Extract the state file path.** Search the CLAUDE.md content for the "Initialize" rule (heading containing "Initialize" or "get up to speed", usually `### 1. Initialize`) and pull the backtick-quoted path ending in `_state.md`. If that heading isn't found, fall back to the first backtick-quoted `*_state.md` path anywhere in the file.
-
-3. **Read the state file.** If it doesn't exist, say so and stop — don't create one silently (that's `save-state`'s job).
-
-4. **Also check for a `## Pending Ideas (VaultAgent)` section** in the state file — if present and non-empty, surface those items too (they were routed here by VaultAgent between sessions).
-
-5. **Summarize, don't dump.** Present the state back as a short briefing: current status, recent wins, next steps/blockers, and any pending ideas — not a raw file cat. This is the point of the skill: turn the state file into an actual "here's where we left off" for the session.
-
-## Notes
-
-- Do not read the log or a linked `<Project>_reference.md` at the start. Open the reference file only when the task needs it. To search the log, use `grep -n '^## '` and read only the lines you need.
-- Read-only. Never edits the state file, the log, or the project's `CLAUDE.md`.
-- If the CLAUDE.md also names a plan/design doc (e.g. a `*_plan.md`) as something that shouldn't lag the state file, it's fine to skim it too if the state file references something the plan would clarify — but the state file is the primary source of truth for "where we are."
-- This is the counterpart to `save-state` — always keep the two in sync in behavior (same path-discovery logic).
-```
-
-The agent always sees the `name` and `description` at the top, so it knows the skill exists and when to use it. The steps below only load when the skill runs. I can run it by name with `/get-up-to-speed`, or just say the phrase and the agent picks it from the description.
-
-That is the difference from `CLAUDE.md`. `CLAUDE.md` is read every session, and a skill costs nothing until you need it. So `CLAUDE.md` holds the rules, and skills hold the procedures. A good first skill is whatever you explain to the agent more than twice.
+![The get-up-to-speed SKILL.md: the name and description are always visible, the steps load only when used. Beside it, where skills sit: ~/.claude for every project, and the project folder for one project](../img/skills.png)
 
 ## Where they sit
-
-<!-- FIGURE: v3 slide 5, folder trees for ~/.claude and a project, "both load together" -->
 
 Both kinds of file sit in two places. My home folder holds the ones for every project. "Get up to speed" lives there because every project uses it:
 

@@ -8,7 +8,7 @@ order: 6
 
 With several agents running, the question becomes "which one is waiting on me?"
 
-<!-- FIGURE: slide 7, herdr sidebar with several project workspaces and their working / blocked / done states -->
+![herdr sidebar: one workspace per project, each showing working, blocked or done](../img/herdr.png)
 
 I use [herdr](../kit/herdr.md), a terminal multiplexer built for agent sessions. Google's new [Antigravity](https://antigravity.google/) IDE provides a similar experience from what I can tell (I haven't delved into it yet).
 

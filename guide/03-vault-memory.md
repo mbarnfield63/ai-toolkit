@@ -8,7 +8,7 @@ order: 3
 
 Every agent session starts with no memory, so the memory lives in my Obsidian vault. The vault is my notebook and the agents' memory at the same time. This exists across most, if not all, of my long-term projects and is essential for making cross connections in my notebook too. Some people refer to this technique as the "second brain" (eurgh).[^1]
 
-<!-- FIGURE: slide 4, project folders with CLAUDE.md pointing at state and log pairs in the vault -->
+![Three project folders, each with a CLAUDE.md pointing at its own state and log files in the Obsidian vault](../img/vault.png)
 
 ## Two trees
 

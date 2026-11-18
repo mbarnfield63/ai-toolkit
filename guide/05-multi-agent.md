@@ -10,7 +10,7 @@ My main project is a pipeline for MARVEL analysis. It is perhaps the easiest wor
 
 ## The problem
 
-<!-- FIGURE: slide 2, MARVEL: why (spectra, line lists, energy levels, lab papers) and the pipeline per molecule -->
+![MARVEL: why it matters (JWST spectra, ExoMol line lists, lab papers) and the pipeline per molecule](../img/marvel.png)
 
 To read a molecule in an exoplanet spectrum, you need its line list, and line lists are anchored on measured energy levels. Those measurements are spread over decades of lab papers, each with its own format, labels and errors. MARVEL collects every assigned line for a molecule and builds a network: levels are nodes, lines are edges. A fit gives the best energy levels with uncertainties, and flags lines that disagree.
 
@@ -20,7 +20,7 @@ The catch, and the benefit, is that one wrong number breaks the network: the fit
 
 ## One orchestrator, many workers
 
-<!-- FIGURE: slide 6, me, MARVEL orchestrator, VaultAgent, and literature / extraction / network workers -->
+![Me and VaultAgent above the MARVEL orchestrator, which runs literature, extraction and network workers over shared data](../img/orchestrator.png)
 
 I talk to one agent now, the orchestrator. It is the only agent that writes the MARVEL logs and its board in the vault. When something touches the rest of the vault or another project, it talks to VaultAgent.
 
