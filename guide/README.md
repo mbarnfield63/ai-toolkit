@@ -14,6 +14,10 @@ This is the story of my setup, start to finish. Read it in order. Each page buil
 4. [Many agents on one project](05-multi-agent.md): the MARVEL orchestrator and its workers.
 5. [The cockpit](06-cockpit.md): watching several agents at once.
 
-The tools named along the way each have a page in the [kit](../kit/README.md).
+## Just the tools
+
+All tools can be found within [the kit](../kit/README.md) if you'd rather skip the preamble.
+
+## A living record
 
 This setup changes all the time. Treat it as a record of what I do now, not a finished recipe.
