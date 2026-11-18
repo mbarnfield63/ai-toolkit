@@ -1,12 +1,18 @@
 ---
 title: Working with agents (LLM Discussion Series, November 2026)
-description: "A ten-minute talk for the agentic workflows breakout: the vault as shared memory, the MARVEL orchestrator, the cockpit, and what went wrong."
+description: "A 30-minute talk and an hour of discussion on agentic workflows: the vault as shared memory, the MARVEL orchestrator, and the cockpit."
 order: 2
 ---
 
 # Working with agents
 
-**Date:** 17 November 2026. **Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Physics & Astronomy. **Audience:** the advanced and intermediate rooms combined: astronomy researchers from those starting out with agents to those who already write their own skills. **Length:** about ten minutes, then discussion.
+**Date:** 17 November 2026.
+
+**Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Physics & Astronomy.
+
+**Audience:** the advanced and intermediate rooms combined: astronomy researchers from those starting out with agents to those who already write their own skills.
+
+**Length:** a 30-minute talk, then an hour of discussion.
 
 Subtitle: "A PhD pipeline, a personal vault, and (too much) Claude."
 
@@ -27,16 +33,3 @@ The MARVEL pipeline carried the talk. Each slide showed one pattern, in the orde
 | 11 | One orchestrator, many workers | [many agents on one project](../guide/05-multi-agent.md) | [orchestrator.png](../img/orchestrator.png) |
 | 12 | Watching many agents at once | [the cockpit](../guide/06-cockpit.md) | [herdr.png](../img/herdr.png) |
 | 13 | What's gone wrong, and discussion | | |
-
-## What went wrong (slide 13)
-
-- Agents paraphrased rules when passing them to each other, and the meaning drifted.
-- 315 of 407 rejections an agent had approved turned out to be false.
-- An agent pushed without asking.
-- A train/test leak in a model evaluation.
-
-The discussion questions: where does human sign-off go, how do you check an agent stayed in scope, when is multi-agent worth it, and what about workflows across models (Claude with Codex, for example)?
-
-## Corrections since
-
-Slide 8 said one wrong number "corrupts" the network. It doesn't: a wrong value makes the fit throw an error, which is what lets agents check their own work. [Many agents on one project](../guide/05-multi-agent.md) has the correct version.
