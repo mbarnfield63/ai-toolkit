@@ -1,5 +1,5 @@
 ---
-title: The guide
+title: AI Toolkit
 description: How I work with AI agents day to day, in reading order.
 order: 0
 ---

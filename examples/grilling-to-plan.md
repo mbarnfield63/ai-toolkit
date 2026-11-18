@@ -77,7 +77,7 @@ The agent restated what that settled, said which earlier questions were now moot
 4. The status scale, which examples to write, the example template, the scrub list, the build order.
 5. A "copy me exactly" install guide, which I asked for in round 4.
 
-The second change was in round 4. The agent proposed five worked examples. I kept two (this page and [the orchestrator one](orchestrator-day.md)) and asked for the install guide instead.
+The second change was in round 4. The agent proposed five worked examples. I kept two (this page and an orchestrator day, later replaced by [the question that found a bug](solver-fix.md)) and asked for the install guide instead.
 
 At the end it wrote out the full design and waited. I typed "yes, start step 1", and it created the repo, the licence files and the vault project. Thirty-three minutes from the first message to the agreed design.
 

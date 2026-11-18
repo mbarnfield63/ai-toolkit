@@ -1,0 +1,15 @@
+# Tell the website repo to rebuild, so it picks up the new Markdown.
+name: Rebuild website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh api repos/mbarnfield63/mbarnfield63.github.io/dispatches -f event_type=ai-toolkit-updated
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
