@@ -7,6 +7,7 @@ order: 7
 # graphify
 
 Command-line tool, skill and git hook. Status: `daily` (the hook runs on every commit).
+
 Source: [graphifyy on PyPI](https://pypi.org/project/graphifyy/).
 
 ## What it is

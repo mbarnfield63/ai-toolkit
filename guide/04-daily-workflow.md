@@ -30,13 +30,13 @@ Step 2 is where most of the time goes. In more detail:
 4. Confirm the finished plan.
 5. The agent writes the code under [ponytail](../kit/ponytail.md)'s rules, which are always on.
 6. Commit the changes and say "save state". The [graphify](../kit/graphify.md) hook updates the project's knowledge graph after the commit.
-7. Run the code or pipeline, then the tests. For work where the correct behaviour can be stated up front, I use [tdd](../kit/tdd.md), so the agent has a test to pass instead of "looks right".
+7. Run the code or pipeline, then the tests. For work where the correct behaviour can be stated up front, I use [tdd](../kit/tdd.md), so the agent has a test to pass instead of "looks right". Reading the results myself matters as much: in [the question that found a bug](../examples/solver-fix.md), two questions about one table turned a routine rerun into a fix.
 8. Spawn agents as needed for specific code blocks or pipeline stages, and wait for them to finish.
 9. Save state again. The log gets a new entry, and the state file is replaced, so the next session starts from current context, not stale context.
 
 ## Why grill first
 
-Clear, detailed prompts are worth the effort up front. Every vague ask costs tokens later, while the agent works out what should have been said at the start. So I interrogate large or unclear asks before any code is written, instead of leaving the model to guess in the middle of the work. This repo was planned that way: a grilling session agreed the layout, the build order and the scrub list before any page was written.
+Clear, detailed prompts are worth the effort up front. Every vague ask costs tokens later, while the agent works out what should have been said at the start. So I interrogate large or unclear asks before any code is written, instead of leaving the model to guess in the middle of the work. This repo was planned that way: a grilling session agreed the layout, the build order and the scrub list before any page was written. The session is written up in [from a vague idea to a plan](../examples/grilling-to-plan.md).
 
 ## Choosing a model
 

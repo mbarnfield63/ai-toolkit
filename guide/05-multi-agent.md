@@ -47,6 +47,4 @@ On 15 November a collaborator asked whether two dropped sources had ever been te
 3. The orchestrator drafted the reply.
 4. I read it and sent it.
 
-The full run is written up as an example in [examples/](../examples/).
-
 [^1]: NB: Since the individual workers aren't **subagents** of the orchestrator, they're their own headless claude instances, they *can* spawn subagents themselves. If they were subagents themselves, they could not spawn further subagents.

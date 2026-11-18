@@ -30,7 +30,7 @@ SCRUB = {
     ),
 }
 # Placeholders that look like matches but aren't private.
-ALLOWED = {"noreply@github.com", "git@github.com"}
+ALLOWED = {"noreply@github.com", "git@github.com", "you@example.com"}
 
 
 def load_json(path):

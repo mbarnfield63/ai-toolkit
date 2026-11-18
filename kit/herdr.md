@@ -6,7 +6,8 @@ order: 6
 
 # herdr
 
-Terminal app and hook. Status: `daily` (its state hook is `always-on`). 
+Terminal app and hook. Status: `daily` (its state hook is `always-on`).
+
 Source: [herdr.dev](https://herdr.dev).
 
 ## What it is

@@ -7,6 +7,7 @@ order: 3
 # rtk
 
 Command-line tool and hook. Status: `always-on`.
+
 Source: [rtk-ai/rtk](https://github.com/rtk-ai/rtk).
 
 ## What it is

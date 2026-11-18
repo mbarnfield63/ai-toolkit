@@ -7,6 +7,7 @@ order: 9
 # Remote Control
 
 Claude Code feature. Status: `daily`.
+
 Docs: [Remote Control](https://code.claude.com/docs/en/remote-control).
 
 ## What it is

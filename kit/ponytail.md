@@ -7,6 +7,7 @@ order: 1
 # ponytail
 
 Plugin by Dietrich Gebert. Status: `always-on`.
+
 Source: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail).
 
 ## What it is
