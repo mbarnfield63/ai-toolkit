@@ -1,6 +1,6 @@
 ---
 title: Working with agents (LLM Discussion Series, November 2026)
-description: A ten-minute talk for the agentic workflows breakout: the vault as shared memory, the MARVEL orchestrator, the cockpit, and what went wrong.
+description: "A ten-minute talk for the agentic workflows breakout: the vault as shared memory, the MARVEL orchestrator, the cockpit, and what went wrong."
 order: 2
 ---
 
