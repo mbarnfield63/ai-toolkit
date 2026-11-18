@@ -1,12 +1,12 @@
 ---
 title: Working with agents (LLM Discussion Series, November 2026)
-description: A ten-minute talk on the agentic workflows breakout: the vault as shared memory, the MARVEL orchestrator, the cockpit, and what went wrong.
+description: A ten-minute talk for the agentic workflows breakout: the vault as shared memory, the MARVEL orchestrator, the cockpit, and what went wrong.
 order: 2
 ---
 
 # Working with agents
 
-**Date:** 17 November 2026. **Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Physics & Astronomy. **Audience:** astronomy researchers who already use Claude Code, Codex or Copilot. **Length:** about ten minutes, then discussion.
+**Date:** 17 November 2026. **Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Physics & Astronomy. **Audience:** the advanced and intermediate rooms combined: astronomy researchers from those starting out with agents to those who already write their own skills. **Length:** about ten minutes, then discussion.
 
 Subtitle: "A PhD pipeline, a personal vault, and (too much) Claude."
 

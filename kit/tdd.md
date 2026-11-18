@@ -6,7 +6,7 @@ order: 11
 
 # tdd
 
-Skill, from Matt Pocock's skills plugin. Status: `occasional`.
+Skill, from Matt Pocock's skills plugin. Status: `occasional` (when writing code).
 
 Source: [mattpocock/skills](https://github.com/mattpocock/skills).
 

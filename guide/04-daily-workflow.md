@@ -14,7 +14,7 @@ The vault from the [last page](03-vault-memory.md) is the hub. Nothing depends o
 
 0. **An idea arrives.** Sometimes while away from my desk, I find a reason to message VaultAgent from my phone. This agent runs all the time on a home server through Claude Code's [Remote Control](../kit/remote-control.md) and still has access to my entire vault. In this case a project idea goes into that project's state file under "Pending Ideas". A reel can be transcribed, or GitHub link summarised into a note and filed to be used later.
 1. **I get up to speed.** At my desk I open the project in [herdr](../kit/herdr.md) and use /[get-up-to-speed](../kit/get-up-to-speed.md) to trigger the skill. The agent reads the state file, and yesterday's idea is waiting there.
-2. **We plan, then it works.** For anything big, I run a [grilling](../kit/grilling.md) session first. The agent asks me one question at a time, each with a recommended answer, until we agree on a plan. Then it works.
+2. **We plan, then it works.** For anything big, I run a [grilling](../kit/grilling.md) session first. The agent asks me numbered rounds of questions, each with a recommended answer, until we agree on a plan. Then it works.
 3. **Heavy jobs go to the cluster.** Jobs like OCR on scanned papers or testing new builds of ML models go to the department GPU cluster through my [hypatia](../kit/hypatia.md) cluster skills.
 4. **I save state.** At a natural stopping point I use my /[save-state](../kit/save-state.md) skill. The vault gets the new state and log, and the commit is made.
 
@@ -26,7 +26,7 @@ Step 2 is where most of the time goes. In more detail:
 
 1. Launch Claude Code in the project folder and say "get up to speed".
 2. Run `/grilling` with "I want to make/fix/do [idea]". Follow with a long, detailed description of what I want, or what is broken.
-3. Answer lots of questions, one at a time, until we share an understanding.
+3. Answer rounds of questions until we share an understanding.
 4. Confirm the finished plan.
 5. The agent writes the code under [ponytail](../kit/ponytail.md)'s rules, which are always on.
 6. Commit the changes and say "save state". The [graphify](../kit/graphify.md) hook updates the project's knowledge graph after the commit.

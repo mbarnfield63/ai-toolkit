@@ -51,7 +51,7 @@ The status says how often a tool runs:
 | [grilling](grilling.md) | `daily` | Interviews me about a plan until we agree on it. |
 | [hypatia](hypatia.md) | `weekly` | Mine, private. Sends GPU jobs to my department's cluster and checks on them. |
 | MARVEL skills | `weekly` | Mine, private, one set per project: `marvel-lit-review`, `marvel-pipeline`, `marvel-network`, `marvel-greedy-triage`, `new-marvel-paper`, `student-handoff`. The stages of the pipeline in [multi-agent](../guide/05-multi-agent.md). |
-| [tdd](tdd.md) | `occasional` | Test-first development, so the agent has a test to pass. |
+| [tdd](tdd.md) | `occasional` (when writing code) | Test-first development, so the agent has a test to pass. |
 | `tikz-figures` | `occasional` | Mine, private. Draws TikZ figures for papers and my thesis in my house style. |
 | `diagnosing-bugs`, `codebase-design`, `domain-modeling` | `occasional` | From Matt Pocock's plugin. A loop for hard bugs, and help with code structure and naming. |
 | `to-prd`, `to-issues`, `writing-great-skills` | `occasional` | Turn a conversation into a spec or a set of issues, and a reference for writing skills. |

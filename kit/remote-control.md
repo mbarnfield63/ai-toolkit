@@ -28,4 +28,4 @@ On the server, in the vault folder:
 claude remote-control
 ```
 
-The session then appears in the Claude app under my account. Remote Control is still a research preview, so check the docs for your plan and version before relying on it.
+The session then appears in the Claude app under my account. VaultAgent itself runs as `claude --remote-control vaultagent` inside tmux, started by a systemd user unit, so the session has a fixed name and survives reboots. Step 14 of [copy me exactly](../examples/copy-me-exactly.md) has the unit. Remote Control is still a research preview, so check the docs for your plan and version before relying on it.
