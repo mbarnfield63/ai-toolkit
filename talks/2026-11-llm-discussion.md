@@ -8,7 +8,7 @@ order: 2
 
 **Date:** 17 November 2026.
 
-**Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Physics & Astronomy.
+**Event:** LLM Discussion Series, session 3, breakout on agentic workflows and multi-agent architectures, UCL Astronomy.
 
 **Audience:** the advanced and intermediate rooms combined: astronomy researchers from those starting out with agents to those who already write their own skills.
 
