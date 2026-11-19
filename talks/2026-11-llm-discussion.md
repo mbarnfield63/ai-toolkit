@@ -1,7 +1,7 @@
 ---
 title: Working with agents (LLM Discussion Series, November 2026)
 description: "A 30-minute talk and an hour of discussion on agentic workflows: the vault as shared memory, the MARVEL orchestrator, and the cockpit."
-order: 2
+order: 1
 ---
 
 # Working with agents
